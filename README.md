@@ -1,4 +1,5 @@
-readme_text = """
+# SMEily_MVP ReadMe
+
 # SMEily 💸
 
 SMEily is a global lending and payments platform designed for underserved SMEs around the world. The MVP connects borrowers and investors using blockchain, stablecoins, and real-time credit scoring — offering a fully automated, transparent, and borderless lending experience.
@@ -60,12 +61,6 @@ In this stage, SMEily supports:
 
 ---
 
-## 🧱 Architecture Diagram
-
-![MVP Flowchart](smeily_bp_to_mvp_flowchart.png)
-
----
-
 ## 🔒 Risk Management
 
 ### Prerequisites for Scale
@@ -96,3 +91,14 @@ In this stage, SMEily supports:
 ### 1. Install dependencies
 ```bash
 pip install -r requirements.txt
+```
+
+**### 2. Start Backend**
+```bash
+uvicorn backend.main:app --reload
+```
+
+**### 3. Start Frontend on different terminal**
+```bash
+streamlit run frontend/app.py
+```
