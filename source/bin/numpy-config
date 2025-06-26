@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' "/Users/chloeyoun/Desktop/RSM/Period 4 and 5/Fintech/Assignment 2_ Launch MVP/Fintech_Assignment2/source/bin/python" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from numpy._configtool import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
